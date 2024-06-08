@@ -128,8 +128,8 @@ include '../controller/nilai/read.php';
                                     foreach ($kriteria as $k) {
                                         echo '<div class="form-group">
                                             <label for="nilai' . $k[0] . '">C' . $index++ . '</label>
-                                            <input type="text" class="form-control" name="kriteria[]" value="' . $k[0] . '" hidden>
-                                            <input type="number" class="form-control" id="nilai' . $k[0] . '" name="nilai[]" required>
+                                            <input type="number" class="form-control" name="kriteria[]" value="' . $k[0] . '" hidden>
+                                            <input type="number" class="form-control" id="nilai' . $k[0] . '" name="nilai[]" step="0.1" required>
                                             </div>';
                                     }
                                     ?>
@@ -159,28 +159,29 @@ include '../controller/nilai/read.php';
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="alternatif">Alternatif</label>
-                                <input type="text" class="form-control" id="alternatif" name="alternatif" value="' . $a[1] . '" readonly>
+                                <input type="text" class="form-control" value="' . $a[1] . '" readonly>
+                                <input type="text" class="form-control" id="alternatif" name="alternatif" value="' . $a[0] . '" hidden>
                             </div>';
                     $index = 1;
                     foreach ($kriteria as $k) {
-                        $value = ''; // default value
+                        $value = null;
                         foreach ($data as $row) {
                             if ($row[2] == $k[0] && $row[4] == $a[0]) {
-                                $value = $row[1]; // set value from data
+                                $value = $row[1];
                                 break;
                             }
                         }
                         echo '<div class="form-group">
-                                    <label for="kriteria' . $k[0] . '">C' . $index++ . '</label>
-                                    <input type="text" class="form-control" name="kriteria[]" value="' . $k[0] . '" hidden>
-                                    <input type="number" class="form-control" id="kriteria' . $k[0] . '" name="nilai[]' . $k[0] . '" value="' . $value . '">
-                                </div>';
+                                    <label for="nilai' . $k[1] . '">C' . $index++ . '</label>
+                                    <input type="number" class="form-control" name="kriteria[]" value="' . $k[0] . '" hidden>
+                                    <input type="number" class="form-control" id="nilai' . $k[1] . '" name="nilai[]" value="' . $value . '" step="0.1" required>
+                             </div>';
                     }
 
-                    echo '          </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
+                    echo '<div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -188,7 +189,6 @@ include '../controller/nilai/read.php';
         </div>';
                 }
                 ?>
-
             </section>
 
             <!-- Control Sidebar -->
@@ -201,12 +201,14 @@ include '../controller/nilai/read.php';
             <?php include '../views/layout/footer.php'; ?>
         </div>
         <!-- ./wrapper -->
+    </div>
 
-        <!-- jQuery -->
-        <script src="assets/assets/plugins/jquery/jquery.min.js"></script>
-        <!-- Bootstrap 4 -->
-        <script src="assets/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- overlayScrollbars -->
-        <script src="assets/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="assets/assets/dist/js/adminlte.min.js">
+    <!-- jQuery -->
+    <script src="assets/assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="assets/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="assets/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/assets/dist/js/adminlte.min.js"></script>
+</body>

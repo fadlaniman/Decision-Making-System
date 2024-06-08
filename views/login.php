@@ -15,6 +15,9 @@ include '../model/connection.php'
 <body>
     <div class="login-container">
         <h2>Login</h2>
+        <?php if (isset($_SESSION['message'])) {
+            echo "<p>" . $_SESSION['message'] . "</p>";
+        } ?>
         <form action="../controller/authentication.php" method="POST">
             <div class="input-group">
                 <label for="username">Username</label>

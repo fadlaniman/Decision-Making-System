@@ -184,5 +184,3 @@
         <!-- AdminLTE for demo purposes -->
         <script src="assets/assets/dist/js/demo.js"></script>
 </body>
-
-</html>

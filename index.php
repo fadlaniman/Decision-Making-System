@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="assets/assets/plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="assets/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="/spk/views/assets/assets/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/spk/views/assets/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="assets/assets/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/spk/views/assets/assets/dist/css/adminlte.min.css">
 </head>
 
 </html>

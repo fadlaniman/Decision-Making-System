@@ -4,8 +4,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="assets/assets/index3.html" class="brand-link">
-        <img src="assets/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="#" class="brand-link">
+        <img src="/spk/views/assets/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">SPK (TOPSIS)</span>
     </a>
 
@@ -14,7 +14,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <!-- Sidebar user (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="assets/assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                <img src="/spk/views/assets/assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block"><?php session_start();
@@ -59,13 +59,58 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="http://localhost/spk/views/perhitungan.php" class="nav-link <?php echo $current_page == 'perhitungan.php' ? 'active' : ''; ?>">
+                <li class="nav-item <?php echo $current_page == 'home.php' || $current_page == 'kriteria.php' || $current_page == 'alternatif.php' || $current_page == 'nilai.php' ? '' : 'menu-open'; ?>">
+                    <a href="#" class="nav-link <?php echo $current_page == 'home.php' || $current_page == 'kriteria.php' || $current_page == 'alternatif.php' || $current_page == 'nilai.php' ? '' : 'active'; ?>">
                         <i class="nav-icon fas fa-calculator"></i>
                         <p>
                             Perhitungan
+                            <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/data.php" class="nav-link <?php echo $current_page == 'data.php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Data Nilai</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/normalisasi(R).php" class="nav-link <?php echo $current_page == 'normalisasi(R).php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Normalisasi Matriks ('R)</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/normalisasi(Y).php" class="nav-link <?php echo $current_page == 'normalisasi(Y).php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Normalisasi Matriks ('Y)</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/ideal.php" class="nav-link <?php echo $current_page == 'ideal.php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Nilai Solusi Ideal</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/solusi.php" class="nav-link <?php echo $current_page == 'solusi.php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Solusi Ideal</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/preferensi.php" class="nav-link <?php echo $current_page == 'preferensi.php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Nilai Bobot Preferensi (V)</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/spk/views/perhitungan/rank.php" class="nav-link <?php echo $current_page == 'rank.php' ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Peringkat</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">
