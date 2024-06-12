@@ -102,6 +102,7 @@
                                     <div class="form-group">
                                         <label for="bobot">Jenis</label>
                                         <select class="form-control" id="jenis" name="jenis" required>
+                                            <option value="">Pilih Jenis</option>
                                             <option value="cost">cost</option>
                                             <option value="benefit">benefit</option>
                                         </select>

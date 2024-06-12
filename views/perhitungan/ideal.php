@@ -86,7 +86,7 @@ include '../../controller/nilai/read.php';
 
                                 // Display the ideal solution
                                 echo '<tr>';
-                                echo '<td>' . 'A+' . '</td>';
+                                echo '<th>' . 'A+' . '</th>';
                                 foreach ($kriteria as $k) {
                                     echo '<td>' . (isset($idealSolution[$k[0]]) ? $idealSolution[$k[0]] : '') . '</td>';
                                 }
@@ -94,7 +94,7 @@ include '../../controller/nilai/read.php';
 
                                 // Display the negative-ideal solution
                                 echo '<tr>';
-                                echo '<td>' . 'A-' . '</td>';
+                                echo '<th>' . 'A-' . '</th>';
                                 foreach ($kriteria as $k) {
                                     echo '<td>' . (isset($negativeIdealSolution[$k[0]]) ? $negativeIdealSolution[$k[0]] : '') . '</td>';
                                 }

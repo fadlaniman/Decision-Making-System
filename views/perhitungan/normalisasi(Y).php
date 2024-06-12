@@ -36,9 +36,9 @@ include '../../controller/nilai/read.php';
                                 <tr>
                                     <?php
                                     $index = 1;
-                                    echo '<th></th>';
+                                    echo '<th>Alternatif</th>';
                                     foreach ($kriteria as $k) : ?>
-                                        <th><?= 'C' . $index++ ?></th>
+                                        <th><?= $k[1] ?></th>
                                     <?php endforeach; ?>
                                 </tr>
                             </thead>
@@ -47,7 +47,7 @@ include '../../controller/nilai/read.php';
                                 $index = 1;
                                 foreach ($alternatif as $a) {
                                     echo '<tr>';
-                                    echo '<td>' . 'A' . $index++ . '</td>';
+                                    echo '<td>'  . $a[1] . '</td>';
                                     foreach ($kriteria as $k) {
                                         $value = 0;
                                         $score = 0;

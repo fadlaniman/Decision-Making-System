@@ -95,7 +95,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <li class="nav-item">
                             <a href="http://localhost/spk/views/perhitungan/solusi.php" class="nav-link <?php echo $current_page == 'solusi.php' ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Solusi Ideal</p>
+                                <p>Jarak Solusi Ideal</p>
                             </a>
                         </li>
                         <li class="nav-item">

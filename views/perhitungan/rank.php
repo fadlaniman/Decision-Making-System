@@ -129,7 +129,6 @@ include '../../controller/nilai/read.php';
                                     }
                                     $rank++;
                                 }
-
                                 // Display the results with ranking
                                 $index = 1;
                                 echo '<tr>';
@@ -145,7 +144,7 @@ include '../../controller/nilai/read.php';
                                         echo '<td>' . $index++ . '</td>';
                                         echo '<td>' . $a[1] . '</td>';
                                         echo '<td>' . $sumPreference . '</td>';
-                                        echo '<td>' . 'Peringkat Ke-' .  $ranking[$a[0]] . '</td>'; // Rank
+                                        echo '<td>' . 'Peringkat Ke-' .   $ranking[$a[0]] . '</td>'; // Rank
                                         echo '</tr>';
                                     } else {
                                         echo '<tr>';

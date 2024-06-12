@@ -3,7 +3,7 @@ include '../../index.php';
 include '../../controller/nilai/read.php';
 ?>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
     <div class="wrapper">
         <?php include '../../views/layout/navbar.php' ?>

@@ -124,7 +124,7 @@ include '../../controller/nilai/read.php';
                                         $sumPreference = $separationFromNegativeIdeal[$a[0]] / ($separationFromIdeal[$a[0]] + $separationFromNegativeIdeal[$a[0]]);
                                     }
                                     echo '<tr>';
-                                    echo '<td>' . 'V' . $index++ . '</td>';
+                                    echo '<th>' . 'V' . $index++ . '</th>';
                                     echo '<td>' . ($sumPreference !== null ? $sumPreference : '') . '</td>'; // Display '-' if no value
                                     echo '</tr>';
                                 }

@@ -45,7 +45,7 @@ include '../controller/nilai/read.php';
                                                 <?php
                                                 $index = 1;
                                                 foreach ($kriteria as $k) {
-                                                    echo '<th style="width: ' . 50 / count($kriteria) . '%">C' . $index++ . '</th>';
+                                                    echo '<th style="width: ' . 50 / count($kriteria) . '%">' . $k[1] . '</th>';
                                                 }
                                                 ?>
                                                 <th style="width: 20%;">Actions</th>

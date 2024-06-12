@@ -16,7 +16,7 @@
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#"></a></li>
-                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
                             </ol>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <h5 class="mb-3">Dashboard</h5>
+                    <h5 class="mb-3">Home</h5>
                     <div class="row">
                         <div class="col-md-3 col-sm-6 col-12">
                             <div class="info-box">

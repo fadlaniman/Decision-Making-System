@@ -20,7 +20,7 @@ include '../../controller/nilai/read.php';
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item active">Home</li>
                                 <li class="breadcrumb-item active">Perhitungan</li>
-                                <li class="breadcrumb-item"><a href="#">Solusi</a></li>
+                                <li class="breadcrumb-item"><a href="#">Jarak</a></li>
                             </ol>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ include '../../controller/nilai/read.php';
             <section class="content">
                 <div class="container-fluid">
                     <div class="container py-3">
-                        <h5>Solusi Ideal</h5>
+                        <h5>Jarak Solusi Ideal</h5>
                         <table id="example2" class="table table-bordered table-hover bg-white">
                             <tbody>
                                 <?php
@@ -107,9 +107,9 @@ include '../../controller/nilai/read.php';
                                 // Display the separation measures for each alternative
                                 foreach ($alternatif as $a) {
                                     echo '<tr>';
-                                    echo '<td>' . 'D+' . '</td>';
+                                    echo '<th>' . 'D+' . '</th>';
                                     echo '<td>' . (isset($separationFromIdeal[$a[0]]) ? $separationFromIdeal[$a[0]] : '') . '</td>';
-                                    echo '<td>' . 'D-' . '</td>';
+                                    echo '<th>' . 'D-' . '</th>';
                                     echo '<td>' . (isset($separationFromNegativeIdeal[$a[0]]) ? $separationFromNegativeIdeal[$a[0]] : '') . '</td>';
                                     echo '</tr>';
                                 }
